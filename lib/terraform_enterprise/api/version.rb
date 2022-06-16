@@ -1,5 +1,5 @@
 module TerraformEnterprise
   module API
-    VERSION = '0.0.9.1a'.freeze
+    VERSION = '0.0.10'.freeze
   end
 end
