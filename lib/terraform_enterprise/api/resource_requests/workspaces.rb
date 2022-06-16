@@ -5,7 +5,7 @@ module TerraformEnterprise
     # Workspace resource request
     class Workspaces < TerraformEnterprise::API::ResourceRequest
       def list(params = {})
-        @request.get(:organizations, params[:organization], :workspaces)
+        @request.get(:organizations, params[:organization], :workspaces,:search[name],params[:search])
       end
 
       def get(params = {})
