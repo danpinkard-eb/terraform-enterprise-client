@@ -6,7 +6,7 @@ module TerraformEnterprise
     class Workspaces < TerraformEnterprise::API::ResourceRequest
       def list(params = {})
         puts "Workspaces Debug Params=#{params.inspect}"
-        @request.get(:organizations, params[:organization], :workspaces,:search[name],params[:search])
+        @request.get(:organizations, params[:organization], :workspaces,:search[name])
         puts "Workspaces Debug Params=#{params.inspect}"
       end
 
